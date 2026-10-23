@@ -1,23 +1,16 @@
 
-// 1. FOOTER YEAR
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+// Automatically update the footer year
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
 
-// 2. LIGHT AND DARK THEME TOGGLE
-const themeToggle = document.getElementById("themeToggle");
+// Typing animation
 
-themeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("light-theme");
-
-    const isLight = document.body.classList.contains("light-theme");
-
-    themeToggle.textContent = isLight ? "🌙" : "☀️";
-});
-
-
-// 3. TYPING ANIMATION
-const typingText = document.getElementById("typingText");
+const typingElement = document.getElementById("typing-text");
 
 const roles = [
     "Student",
@@ -26,32 +19,39 @@ const roles = [
 ];
 
 let roleIndex = 0;
-let characterIndex = 0;
-let deleting = false;
+let charIndex = 0;
+let isDeleting = false;
 
-function typeRole() {
+function typeAnimation() {
+    if (!typingElement) {
+        return;
+    }
+
     const currentRole = roles[roleIndex];
 
-    if (deleting) {
-        characterIndex--;
+    if (isDeleting) {
+        charIndex--;
     } else {
-        characterIndex++;
+        charIndex++;
     }
 
-    typingText.textContent = currentRole.substring(0, characterIndex);
+    typingElement.textContent =
+        currentRole.substring(0, charIndex);
 
-    let delay = deleting ? 60 : 110;
+    let delay = isDeleting ? 50 : 100;
 
-    if (!deleting && characterIndex === currentRole.length) {
-        deleting = true;
+    if (!isDeleting && charIndex === currentRole.length) {
+        isDeleting = true;
         delay = 1200;
-    } else if (deleting && characterIndex === 0) {
-        deleting = false;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+
         roleIndex = (roleIndex + 1) % roles.length;
-        delay = 400;
+
+        delay = 300;
     }
 
-    setTimeout(typeRole, delay);
+    setTimeout(typeAnimation, delay);
 }
 
-typeRole();
+typeAnimation();

@@ -1,314 +1,369 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Santhosh N | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">S<span>.</span></a>
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Santhosh<span>.</span></a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main>
 
-        <!-- HOME SECTION -->
-        <section id="home" class="hero">
+    <!-- Home -->
+    <section id="home" class="hero section">
 
-            <p class="greeting">HELLO, WORLD! 👋</p>
+        <div class="hero-content">
+            <p class="eyebrow">HELLO, I'M</p>
 
-            <h1>I'm <span>Santhosh N</span></h1>
+            <h1>Santhosh <span>N</span></h1>
 
-            <h2>I'm a <span id="typingText">Student</span></h2>
+            <h2>I'm a <span id="typing-text">Student</span></h2>
 
-            <p class="hero-description">
-                A Computer Science student passionate about coding,
-                web development and building useful digital projects.
+            <p class="description">
+                A passionate Computer Science student who enjoys
+                building websites, learning programming and creating
+                useful digital experiences.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">Explore My Work ↗</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="buttons">
+                <a href="#projects" class="btn primary-btn">
+                    View My Work ↗
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
             </div>
 
-            <p class="scroll-text">SCROLL TO EXPLORE ↓</p>
+            <div class="social-links">
+                <a href="https://github.com/Santhosh25050"
+                   target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="section">
-
-            <p class="section-label">GET TO KNOW ME</p>
-
-            <h2 class="section-title">
-                About <span>Me</span>
-            </h2>
-
-            <div class="about-card">
-
-                <h3>Student & Aspiring Developer</h3>
-
-                <p>
-                    I'm Santhosh N, a second-year B.Sc Computer Science
-                    student at KG College of Arts and Science.
-
-                    I'm interested in programming, web development and
-                    solving problems through technology. I enjoy learning
-                    new concepts and applying my knowledge by creating
-                    practical projects.
-
-                    My goal is to improve my technical skills and become
-                    a professional software developer.
-                </p>
-
-                <p>
-                    <strong>Education:</strong>
-                    B.Sc Computer Science
-                </p>
-
-                <p>
-                    <strong>College:</strong>
-                    KG College of Arts and Science
-                </p>
-
+                <a href="https://www.linkedin.com/in/santhosh-nagarajan-854283446/"
+                   target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             </div>
+        </div>
 
-        </section>
+        <div class="hero-visual">
+            <div class="circle"></div>
 
-
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="section">
-
-            <p class="section-label">WHAT I KNOW</p>
-
-            <h2 class="section-title">
-                My <span>Skills</span>
-            </h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">C Programming</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Java</div>
-
+            <div class="code-box">
+                <p class="code-label">&lt;developer&gt;</p>
+                <h3>Learn.</h3>
+                <h3>Create.</h3>
+                <h3>Improve.</h3>
+                <p class="code-label">&lt;/developer&gt;</p>
             </div>
+        </div>
 
-        </section>
-
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="section">
-
-            <p class="section-label">MY RECENT WORK</p>
-
-            <h2 class="section-title">
-                Featured <span>Projects</span>
-            </h2>
-
-            <div class="projects-grid">
+    </section>
 
 
-                <!-- PROJECT 1: TASKFLOW -->
-                <article class="project-card">
+    <!-- About -->
+    <section id="about" class="section about-section">
 
-                    <div class="project-number">01</div>
+        <p class="section-label">GET TO KNOW ME</p>
 
-                    <p class="project-type">TASK MANAGEMENT</p>
+        <h2 class="section-title">About <span>Me</span></h2>
 
-                    <h3>TaskFlow</h3>
-
-                    <p>
-                        A task management application designed to organise
-                        daily tasks and track progress.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/Santhosh25050/daily-task"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            GitHub ↗
-                        </a>
-
-                        <a href="https://morning-tsk.netlify.app/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 2: SPENDWISE -->
-                <article class="project-card">
-
-                    <div class="project-number">02</div>
-
-                    <p class="project-type">FINANCE TRACKING</p>
-
-                    <h3>SpendWise</h3>
-
-                    <p>
-                        An expense tracker that helps users record expenses
-                        and understand their spending habits.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/Santhosh25050/spendwise"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            GitHub ↗
-                        </a>
-
-                        <a href="https://spend-wise-money.netlify.app/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 3: CINESCOPE -->
-                <article class="project-card">
-
-                    <div class="project-number">03</div>
-
-                    <p class="project-type">MOVIE DISCOVERY</p>
-
-                    <h3>CineScope</h3>
-
-                    <p>
-                        A movie discovery application that lets users explore
-                        movies and organise a personal watchlist.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/Santhosh25050/cine-scope"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            GitHub ↗
-                        </a>
-
-                        <a href="https://cine-scopewatch.netlify.app/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Live Demo ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="section contact-section">
-
-            <p class="section-label">LET'S CONNECT</p>
-
-            <h2 class="section-title">
-                Contact <span>Me</span>
-            </h2>
+        <div class="about-card">
+            <h3>Student & Aspiring Developer</h3>
 
             <p>
-                Have an opportunity or an interesting project?
-                Feel free to connect with me.
+                Hi! I'm Santhosh N, a second-year B.Sc Computer Science
+                student at KG College of Arts and Science.
             </p>
 
-            <a class="btn"
-               href="mailto:santhoshnagarajan248@gmail.com">
+            <p>
+                I'm interested in web development and programming.
+                I enjoy learning new technologies and developing
+                practical projects to improve my technical skills.
+            </p>
+
+            <div class="about-details">
+                <div>
+                    <span>Name</span>
+                    <strong>Santhosh N</strong>
+                </div>
+
+                <div>
+                    <span>Course</span>
+                    <strong>B.Sc Computer Science</strong>
+                </div>
+
+                <div>
+                    <span>College</span>
+                    <strong>KG College of Arts and Science</strong>
+                </div>
+
+                <div>
+                    <span>Interest</span>
+                    <strong>Web Development</strong>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Skills: Single Moving Row -->
+    <section id="skills" class="section skills-section">
+
+        <p class="section-label">WHAT I KNOW</p>
+
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skills-track">
+
+                <!-- First group -->
+                <div class="skills-group">
+
+                    <div class="skill-card">
+                        <span class="skill-icon">5</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">3</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">JS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">C</span>
+                        <span>C Programming</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">Py</span>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">J</span>
+                        <span>Java</span>
+                    </div>
+
+                </div>
+
+                <!-- Duplicate group for seamless scrolling -->
+                <div class="skills-group" aria-hidden="true">
+
+                    <div class="skill-card">
+                        <span class="skill-icon">5</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">3</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">JS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">C</span>
+                        <span>C Programming</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">Py</span>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">J</span>
+                        <span>Java</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="skills-note">Always learning. Always improving.</p>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+
+        <p class="section-label">WHAT I'VE BUILT</p>
+
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <span class="project-number">PROJECT 01</span>
+
+                <div class="project-icon">✓</div>
+
+                <h3>TaskFlow</h3>
+
+                <p>
+                    A task management website to organize daily tasks
+                    and improve productivity.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Santhosh25050/daily-task"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://morning-tsk.netlify.app/"
+                       target="_blank" rel="noopener noreferrer">
+                        Live Demo ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <span class="project-number">PROJECT 02</span>
+
+                <div class="project-icon">₹</div>
+
+                <h3>SpendWise</h3>
+
+                <p>
+                    An expense tracking website designed to help users
+                    track spending and manage money.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Santhosh25050/spendwise"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://spend-wise-money.netlify.app/"
+                       target="_blank" rel="noopener noreferrer">
+                        Live Demo ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <span class="project-number">PROJECT 03</span>
+
+                <div class="project-icon">▶</div>
+
+                <h3>CineScope</h3>
+
+                <p>
+                    A movie discovery website offering a simple and
+                    engaging movie browsing experience.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Santhosh25050/cine-scope"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://cine-scopewatch.netlify.app/"
+                       target="_blank" rel="noopener noreferrer">
+                        Live Demo ↗
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+
+        <p class="section-label">LET'S CONNECT</p>
+
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact-card">
+            <h3>Let's work together!</h3>
+
+            <p>
+                Have a project idea or want to connect?
+                Feel free to send me an email.
+            </p>
+
+            <a href="mailto:santhoshnagarajan248@gmail.com"
+               class="btn primary-btn">
                 Send Me an Email ↗
             </a>
 
-            <div class="social-links">
+            <p class="email">
+                santhoshnagarajan248@gmail.com
+            </p>
+        </div>
 
-                <a href="https://github.com/Santhosh25050"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-                <a href="https://www.linkedin.com/in/santhosh-nagarajan-854283446/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
+    </section>
 
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
         <p>
             © <span id="year"></span> Santhosh N.
-            Built with HTML, CSS & JavaScript.
+            Made with <span class="heart">♥</span>
         </p>
 
+        <a href="#home">Back to Top ↑</a>
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+    <!-- Connect JavaScript -->
+    <script src="./script.js"></script>
 
 </body>
-
 </html>
-```
